@@ -7,10 +7,9 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './materia.module';
-import { KartonComponent } from './pages/karton/karton.component';
 
 @NgModule({
-	declarations: [AppComponent, HeaderComponent, KartonComponent],
+	declarations: [AppComponent, HeaderComponent],
 	imports: [BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule, MaterialModule],
 	providers: [],
 	bootstrap: [AppComponent],
