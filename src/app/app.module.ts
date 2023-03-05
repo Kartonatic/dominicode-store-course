@@ -7,10 +7,18 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './materia.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [AppComponent, HeaderComponent],
-	imports: [BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule, MaterialModule],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		FormsModule,
+		BrowserAnimationsModule,
+		MaterialModule,
+		HttpClientModule,
+	],
 	providers: [],
 	bootstrap: [AppComponent],
 })
