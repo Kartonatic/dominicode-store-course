@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
+import es from '@angular/common/locales/es';
+import { registerLocaleData } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 		MaterialModule,
 		HttpClientModule,
 	],
-	providers: [],
+	providers: [{ provide: LOCALE_ID, useValue: 'es-ES' }],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}
+registerLocaleData(es);
